@@ -1,16 +1,11 @@
 <?php
 	include("conecta.php"); 
+	include("banco-produto.php");
 	include("cabecalho.php");
 
 
 	$nome = $_GET['nome'];
 	$preco = $_GET['preco'];
-
-	function insereProduto($con, $nome, $preco) {
-		$query = "INSERT INTO produtos (nome, preco) VALUES ('{$nome}', '{$preco}')";
-		return $con->query($query);
-	}
-
 ?>
 
 <?php if(insereProduto($con, $nome, $preco)): ?>
