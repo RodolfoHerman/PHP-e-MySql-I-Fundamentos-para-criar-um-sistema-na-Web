@@ -18,3 +18,8 @@ function insereProduto($con, $nome, $preco) {
 	$query = "INSERT INTO produtos (nome, preco) VALUES ('{$nome}', '{$preco}')";
 	return $con->query($query);
 }
+
+function removeProduto($con, $id) {
+	$query = "DELETE FROM produtos WHERE id = {$id}";
+	$con->query($query);
+}
