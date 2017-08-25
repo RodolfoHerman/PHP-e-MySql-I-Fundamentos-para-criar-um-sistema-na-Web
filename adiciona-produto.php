@@ -4,11 +4,12 @@
 	include("cabecalho.php");
 
 
-	$nome = $_GET['nome'];
-	$preco = $_GET['preco'];
+	$nome = $_POST['nome'];
+	$preco = $_POST['preco'];
+	$descricao = $_POST['descricao'];
 ?>
 
-<?php if(insereProduto($con, $nome, $preco)): ?>
+<?php if(insereProduto($con, $nome, $preco, $descricao)): ?>
 	<p class="text-success">
 		Produto <?php echo $nome; ?> com o valor de R$<?php echo $preco; ?> adicionado com sucesso !!
 	</p>	

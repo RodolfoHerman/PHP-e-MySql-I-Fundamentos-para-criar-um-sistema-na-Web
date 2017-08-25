@@ -3,7 +3,7 @@
 	include("banco-produto.php");
 	include("cabecalho.php");
 
-	$id = $_GET['id'];
+	$id = $_POST['id'];
 
 	removeProduto($con, $id);
 

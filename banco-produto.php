@@ -14,8 +14,8 @@ function listaProdutos($con) {
 	return $produtos;
 }
 
-function insereProduto($con, $nome, $preco) {
-	$query = "INSERT INTO produtos (nome, preco) VALUES ('{$nome}', '{$preco}')";
+function insereProduto($con, $nome, $preco, $descricao) {
+	$query = "INSERT INTO produtos (nome, preco, descricao) VALUES ('{$nome}', '{$preco}', '{$descricao}')";
 	return $con->query($query);
 }
 
