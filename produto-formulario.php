@@ -22,11 +22,17 @@
 			<td><textarea class="form-control" name="descricao"></textarea></td>
 		</tr>
 		<tr>
+			<th></th>
+			<td style="text-align: left;"><input type="checkbox" name="usado" /> Usado</td>
+		</tr>
+		<tr>
 			<th>Categoria: </th>
-			<td style="text-align: left;">
-				<?php foreach(listaCategorias($con) as $categoria): ?>
-					<input type="radio" name="categoria_id" value="<?php echo $categoria['id']; ?>"/><?php echo $categoria['nome']; ?><br/>
-				<?php endforeach; ?>
+			<td>
+				<select class="form-control" name="categoria_id">
+					<?php foreach(listaCategorias($con) as $categoria): ?>
+						<option value="<?php echo $categoria['id'] ?>"><?php echo $categoria['nome'] ?></option>
+					<?php endforeach; ?>
+				</select>
 			</td>
 		</tr>
 		<tr>
