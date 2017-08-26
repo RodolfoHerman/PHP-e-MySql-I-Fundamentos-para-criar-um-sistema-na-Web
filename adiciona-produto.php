@@ -7,9 +7,10 @@
 	$nome = $_POST['nome'];
 	$preco = $_POST['preco'];
 	$descricao = $_POST['descricao'];
+	$categoria_id = $_POST['categoria_id'];
 ?>
 
-<?php if(insereProduto($con, $nome, $preco, $descricao)): ?>
+<?php if(insereProduto($con, $nome, $preco, $descricao, $categoria_id)): ?>
 	<p class="text-success">
 		Produto <?php echo $nome; ?> com o valor de R$<?php echo $preco; ?> adicionado com sucesso !!
 	</p>	

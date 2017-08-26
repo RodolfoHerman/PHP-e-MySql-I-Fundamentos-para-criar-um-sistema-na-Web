@@ -2,7 +2,9 @@
 
 function listaProdutos($con) {
 
-	$query = "SELECT * FROM produtos";	
+	$query = "SELECT p.*, c.nome as categoria_nome FROM produtos p JOIN categorias c ON p.categoria_id = c.id";
+
+	//$query = "SELECT * FROM produtos";	
 	$resultado = $con->query($query);
 	
 	$produtos = array();
@@ -14,8 +16,8 @@ function listaProdutos($con) {
 	return $produtos;
 }
 
-function insereProduto($con, $nome, $preco, $descricao) {
-	$query = "INSERT INTO produtos (nome, preco, descricao) VALUES ('{$nome}', '{$preco}', '{$descricao}')";
+function insereProduto($con, $nome, $preco, $descricao, $categoria_id) {
+	$query = "INSERT INTO produtos (nome, preco, descricao, categoria_id) VALUES ('{$nome}', '{$preco}', '{$descricao}', '{$categoria_id}')";
 	return $con->query($query);
 }
 
