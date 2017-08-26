@@ -16,6 +16,7 @@
 			<td><?php echo substr($produto['descricao'], 0, 40); ?></td>
 			<td><?php echo $produto['usado'] ? 'usado' : 'novo' ?></td>
 			<td><?php echo $produto['categoria_nome']; ?></td>
+			<td><a class="btn btn-primary" href="produto-altera-formulario.php?id=<?php echo $produto['id']; ?>">Alterar</a></td>
 			<td>
 				<form action="remove-produto.php" method="POST">
 					<input type="hidden" name="id" value="<?php echo $produto['id']; ?>">

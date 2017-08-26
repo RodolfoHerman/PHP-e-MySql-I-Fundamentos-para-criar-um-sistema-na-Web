@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/loja.css">
+	<link rel="stylesheet" type="text/css" href="css/minha_loja.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta charset="UTF-8">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <a href="index.php" class="navbar-brand">Minha Loja</a>
             </div>
