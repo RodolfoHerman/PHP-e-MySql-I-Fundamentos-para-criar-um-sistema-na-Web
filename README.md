@@ -1,5 +1,6 @@
 # PHP-e-MySql-I-Fundamentos-para-criar-um-sistema-na-Web
-10 Tópicos básicos, separadas por commits, referente a fundamentos iniciais de um sistema web com PHP e MySQL.
+
+## 10 Tópicos básicos, separadas por commits, referente a fundamentos iniciais de um sistema web com PHP e MySQL.
 
 Tópico 1  - Primeiros passos com PHP
 
